@@ -1,11 +1,18 @@
+"use client"
 import FooterBotton from '@/components/bottons/footerBotton'
 import ProfileImg from '../components/profileImg'
 import SingleCard from '@/components/cards/singleCard'
 import { mainNews, mainRecomendedReadings } from '@/data/data'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
-    <>
+    <div style={opacityTransition(isMounted, 2)}>
       <header className='header'>
         <h1>Juan Diego Coianiz</h1>
         <h3>Software Dev.</h3>
@@ -60,6 +67,13 @@ export default function Home() {
         </FooterBotton>
 
       </footer>
-    </>
+    </div >
   )
+}
+
+const opacityTransition = (effect, seconds) => {
+  return {
+    opacity: effect ? '1' : '0',
+    transition: `opacity ${seconds}s ease-in-out`
+  }
 }
