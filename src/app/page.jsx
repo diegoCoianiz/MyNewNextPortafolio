@@ -1,10 +1,10 @@
-"use client"
+"use client" 
 import ProfileImg from '../components/profileImg'
 import SingleCard from '@/components/cards/singleCard'
 import { mainNews, mainRecomendedReadings } from '@/data/data'
 import { useState, useEffect } from 'react'
 import WhatsApp from '@/components/boxes/whatsappBox'
-import IndexPageFooterBox from '@/components/boxes/IndexPageFooterBox'
+import IndexPageFooterBox from '@/components/boxes/indexPageFooterBox'
 
 export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
