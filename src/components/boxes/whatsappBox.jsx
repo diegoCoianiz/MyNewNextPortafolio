@@ -1,5 +1,3 @@
-'use client'
-import BackBotton from '@/components/bottons/backBotton'
 import WhatsappMessageCard from '@/components/cards/whatsappMessageCard'
 import { useState } from 'react'
 
@@ -34,7 +32,7 @@ const WhatsApp = () => {
   }
   return (
     <>
-      <header>
+      <header style={{margin:"0px"}}>
         <form className='whatsappForm' onSubmit={handleSubmit}>
           <input className="whatsappInput" type={"text"} name='userName' id='userName' placeholder="Nombre: 'Maria' (*)" onChange={handleChange}>
           </input>
@@ -49,7 +47,7 @@ const WhatsApp = () => {
           </input>
         </form>
       </header>
-      <section className='cardSection'>
+      <section >
         {
           generatedMessage.issue ?
             <div>
@@ -60,10 +58,6 @@ const WhatsApp = () => {
               <WhatsappMessageCard photo={"https://cdn-icons-png.flaticon.com/512/2731/2731804.png"} issue={"Ups, algo no esta bien.."} userData={""} message={generatedMessage.error} /> : ""
         }
       </section>
-      <hr style={{ marginBottom: "5px" }} />
-      <footer>
-        <BackBotton />
-      </footer>
     </>
   )
 }

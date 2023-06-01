@@ -97,7 +97,7 @@ main {
 
 .whatsappInput {
   font-family: Arial, sans-serif;
-  width: 500px;
+  width: 650px;
   height: 35px;
   border: 0;
   border-bottom: 2px solid #4d0000;
@@ -222,6 +222,10 @@ hr {
 
   .card h1 {
     font-size: medium;
+  }
+
+  .whatsappInput {
+    width: 550px;
   }
 
 }
