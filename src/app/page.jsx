@@ -27,7 +27,9 @@ export default function Home() {
 
       </header>
       <section className='cardSection'>
-        <h3>Comunicados:</h3>
+        <h3>Hello = () = {">"} </h3>
+        <SingleCard photo={"https://cdn-icons-png.flaticon.com/512/5986/5986092.png"} title={"Hey, tú! Bienvenid@ a mi rincón en la web"} shortDescription={"Abril 2023"} message={"Fullstack dev apasionado de lenguajes como Node y Python, amante del código. Aquí encontrarás información sobre mis proyectos, habilidades y experiencia.. una muestra de mi trabajo! Estoy siempre en busca de nuevos desafíos y crecimiento, así que siéntete libre de contactarme si necesitas ayuda con algún proyecto o, si quieres, simplemente para saludar!"}/>
+        <h3 style={{marginTop:"20px"}}>Comunicados:</h3>
         {
           mainNews.map((news, id) => (
             <div key={id}>
@@ -35,7 +37,18 @@ export default function Home() {
             </div>
           ))
         }
-        <h3 style={{ marginTop: "20px" }}>Lecturas recomendadas:</h3>
+        
+      </section>
+      <section className='cardSection'>
+      <h3>Contactate conmigo via whatsapp!</h3>
+        <WhatsApp />
+      <h3 style={{margin:"30px 0px -30px"}}>Mis links:</h3>
+      </section>
+      <footer className='footer'> 
+        <IndexPageFooterBox />
+      </footer>
+      <section className='cardSection'>
+      <h3 style={{ marginTop: "-5px" }}>Lecturas recomendadas, post interesantes:</h3>
         {
           mainRecomendedReadings.map((recomended, id) => (
             <div key={id}>
@@ -43,14 +56,7 @@ export default function Home() {
             </div>
           ))
         }
-      </section>
-      <section className='cardSection'>
-      <h3>Contactate conmigo!</h3>
-        <WhatsApp />
-      </section>
-      <footer className='footer'>
-        <IndexPageFooterBox />
-      </footer>
+        </section>
     </div >
   )
 }
