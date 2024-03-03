@@ -59,6 +59,8 @@ body {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
 
 .underlined {
   position: relative;
@@ -84,6 +86,9 @@ footer {
 header img {
   margin-right: 10px;
 }
+header h1 {
+  font-size: 65px;
+}
 
 main {
   display: flex;
@@ -101,6 +106,9 @@ main {
   margin: 0 auto;
   padding: 0px 50px;
 }
+.mainContainer h1 {
+  font-size: 45px
+}
 
 .MainPortrait {
   order: 1;
@@ -116,6 +124,12 @@ main {
   /* o display: inline-flex; */
 }
 
+.MPL_tecnologies {
+  margin-left: -230px;
+  margin-bottom: -18px;
+  font-size: 25px;
+}
+
 .tecnologies {
   border: white solid 2px;
   border-radius: 15px;
@@ -124,10 +138,19 @@ main {
   transition: font-size 0.3s ease;
 }
 
+.tecnologies h1 {
+  font-size: 31px;
+}
+
 .tecnologies:hover {
   border: #d100ae solid 2px;
   color: #d100ae;
   font-size: 120%;
+}
+
+.MPL_subTitle h4{
+  margin: 10px 0px 10px -60px;
+  font-size: 25px;
 }
 
 .portrait img {
@@ -135,6 +158,35 @@ main {
   border: #d100ae solid 2px;
 }
 
+.whatsappButton {
+  border-radius: 50px;
+  border: #d100ae solid 2px;
+  width: 250px;
+  height: 50px;
+  color: #d100ae;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 255, 0, 0.5);
+  box-shadow: 0px 2px 2px rgba(12, 150, 0, 0.568);
+  transition: font-size 0.7s ease;
+}
+.whatsappButton:hover {
+  transform: scale(1.05);
+}
+.whatsappButton h1 {
+  font-size: 25px;
+}
+
+span {
+  font-size: 27px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+.proyects h5 {
+  font-size: 25px;
+  font-family: "League Spartan,sans-serif" 
+}
 
 .proyectsItems div {
   margin-top: 10px;
@@ -188,23 +240,20 @@ button {
   cursor: pointer;
 }
 
-.whatsappButton {
-  border-radius: 50px;
-  border: #d100ae solid 2px;
-  width: 250px;
-  height: 50px;
-  color: #d100ae;
-  text-align: center;
-  line-height: 50px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 255, 0, 0.5);
-  box-shadow: 0px 2px 2px rgba(12, 150, 0, 0.568);
-  transition: font-size 0.7s ease;
+/* ------------------------------------------------------------------------------------------------------ */
+
+.WhoAmI {
+  padding: 0px 10%;
+  background:aliceblue
+}
+.WhoAmI h5 {
+  font-size:25px;
+  font-family:League Spartan,sans-serif;
+  color:black;
+  margin-top:25px;
+  padding-bottom:25px
 }
 
-.whatsappButton:hover {
-  transform: scale(1.05);
-}
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -266,9 +315,9 @@ button {
   }
 }
 
+/* MEDIA QUERYS XIAOMY REDMI 5G === 373*657 en compu  */
 @media screen and (max-width: 394px) {
 
-  /* MEDIA QUERYS XIAOMY REDMI 5G === 373*657 en compu  */
   .blocks:nth-child(1) {
     background-color: rgb(27, 56, 143);
   }
@@ -280,4 +329,77 @@ button {
   .blocks:nth-child(3) {
     background-color: rgb(15, 99, 69);
   }
+
+/* --------------------------------------------------------------------- */
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .mainContainer {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .mainContainer h1 {
+    font-size: 40px
+  }
+  .mainContainer h4 {
+    font-size: 15px
+  }
+
+  .MainPortrait img{
+    margin-top: 15px;
+  }
+
+  .whatsappButton h1 {
+    font-size: 24px;
+  }
+
+  .MPL_tecnologies {
+    margin-left: -115px;
+  }
+
+  .tecnologies h1{
+    font-size: 25px;
+  }
+
+  .MPL_subTitle h4{
+    font-size: 20px;
+  }
+
+  /* --------------------------------------------------------------------- */
+
+  .proyects h5 {
+    font-size: 19px;
+  }
+
+  .proyectsItems div {
+    padding: 0px 15px;
+  }
+
+  /* ------------------------------------------------------------------------- */
+
+  .WhoAmI {
+    padding: 0px 0px;
+  }
+  .WhoAmI h5 {
+    font-size:19px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  /* -------------------------------------------------------------- */
+  footer p {
+    margin-top: -15px;
+    font-size: 15px;
+  }
+  
+  footer h1 {
+    margin-top: -10px;
+    font-size: 12px;
+  }
+
+
 }

@@ -54,7 +54,7 @@ const Header = () => {
         <header style={{ display: "flex", justifyContent: "space-between" }}>
             <div className='underlined' style={{ display: "flex" }}>
                 <Image src="https://cdn-icons-png.flaticon.com/512/8786/8786222.png" alt="Picture of the author" width={50} height={50} />
-                <h1 style={{ fontSize: "50px" }}>Juan Diego Coianiz</h1>
+                <h1 >Juan Diego Coianiz</h1>
             </div>
         </header>
     )
@@ -67,7 +67,7 @@ const Main = () => {
 
         return (
             <div className='mainContainer MainProgrammingLanguages'>
-                <h1 style={{ marginLeft: "-208px", marginBottom: "-18px" }}>Tecnologías.</h1>
+                <h1 className="MPL_tecnologies">Tecnologías.</h1>
                 <h1 style={{ marginBottom: "10px", marginRight: "-80px", fontSize: "52px", color: "#ff00c6c7" }}> MI STACK:</h1>
                 {
                     data.map((language, index) => (
@@ -78,10 +78,12 @@ const Main = () => {
                         </div>
                     ))
                 }
-                <h4 style={{ margin: "10px 0px", marginLeft: "-60px", fontSize: "25px" }}>Frontend & Backend software.</h4>
-                <div style={{ display: "flex" }}>
-                    <h1 style={{ marginTop: "-35px", marginLeft: "65px", fontSize: "92px", color: "#ff00c6c7" }}>+</h1>
-                    <h4 style={{ marginLeft: "-25px", fontSize: "25px" }}>Data Science, Machine Learning developer.</h4>
+                <div className='MPL_subTitle'>
+                    <h4 >Frontend & Backend software.</h4>
+                    <div className='MPL_subTitle2' style={{ display: "flex" }}>
+                        <h1 style={{ marginTop: "-35px", marginLeft: "65px", fontSize: "92px", color: "#ff00c6c7" }}>+</h1>
+                        <h4 style={{ marginLeft: "-25px", fontSize: "25px" }}>Data Science, Machine Learning developer.</h4>
+                    </div>
                 </div>
             </div>
         )
@@ -107,7 +109,7 @@ const Main = () => {
                         <Image src="/portrait.jpg" alt="Picture of the author" width={300} height={300} />
                     </div>
                     <div>
-                        <h1 style={{ fontSize: "45px" }}>/Software Dev.</h1>
+                        <h1 >/Software Dev.</h1>
                     </div>
                     <h4>Node.js y Python apasionado, amante del código. Siempre en busca de nuevos desafíos y crecimiento. Siéntete libre de contactarme si necesitas ayuda con algún proyecto o, si quieres, simplemente para saludar! Buscame en redes:</h4>
                     <ProfileLinks />
@@ -160,7 +162,7 @@ const Proyects = () => {
             <Link href={link} target='_blank' style={{ textDecoration: "none", color: "white" }}>
                 <div className='proyectCard'>
                     <h3 style={{ textAlign: "end", margin: "0px", color: "rgb(0 255 208 / 65%)", marginRight: "45px", }}>{titleParts[0]}</h3>
-                    <div style={{margin:"0px", marginTop:"-40px"}}>
+                    <div style={{ margin: "0px", marginTop: "-40px" }}>
                         <Image src={img} alt={title} width={square} height={square} />
                     </div>
                     <div style={{ padding: "0px 10px" }}>
@@ -174,10 +176,10 @@ const Proyects = () => {
 
     return (
         <>
-            <div style={{ padding: "0px 10%" }}>
+            <div className='proyects' style={{ padding: "0px 10%" }}>
                 <h1 className='title' style={{ margin: "10px 0px", fontSize: "50px" }}>PROYECTOS</h1>
-                <h5 style={{ fontSize: "25px", fontFamily: "League Spartan,sans-serif" }}>
-                    " Encontrar un propósito implica mirar más allá de nuestras identidades externas. Implica conectarnos con nuestras motivaciones internas y reflexionar <span style={{ color: "#d100ae", fontFamily: "League Spartan,sans-serif", fontSize: "27px" }}>¿Qué te hace sentir más vivo, más auténtico? </span>
+                <h5>
+                    " Encontrar un propósito implica mirar más allá de nuestras identidades externas. Implica conectarnos con nuestras motivaciones internas y reflexionar <span style={{ color: "#d100ae", fontFamily: "League Spartan,sans-serif"}}>¿Qué te hace sentir más vivo, más auténtico? </span>
                     Bien, hoy por hoy puedo decir que el desarrollo se ha convertido en mi vía para expresar esa autenticidad. Es, definitivamente, lo que da vida a mi propósito. La capacidad de crear, innovar y aprender nuevas tecnologías no solo me desafía constantemente, sino que también me brinda la oportunidad de impactar positivamente en el mundo a través del poder de la tecnología. "
                 </h5>
             </div>
@@ -199,7 +201,7 @@ const WhoAmI = () => {
 
     const square = 287
     return (
-        <div style={{ padding: "0px 10%", background: "aliceblue" }}>
+        <div className='WhoAmI'>
             <h1 className='title' style={{ margin: "10px 0px", fontSize: "50px", color: "black" }}>SOBRE MI</h1>
             <div className='WhoAmI_items' style={{ display: "flex", flexWrap: "wrap" }}>
                 {instagramPhotos.map((photo, index) => (
@@ -208,7 +210,7 @@ const WhoAmI = () => {
                     </div>
                 ))}
             </div>
-            <h5 style={{ fontSize: "25px", fontFamily: "League Spartan,sans-serif", color: "black", marginTop: "25px", paddingBottom: "25px" }}>
+            <h5>
                 " Explorar el mundo que nos rodea, una de mis mayores fuentes de inspiración. Poder <span style={{ color: "#d100ae", fontFamily: "League Spartan,sans-serif", fontSize: "27px" }}>sumergirme en diversas culturas, descubrir nuevas perspectivas y aprender de cada experiencia</span>. Cada lugar que visito es una oportunidad para ampliar mi comprensión del mundo y enriquecerme de conocimientos. La diversidad de tradiciones, historias y formas vivir encontradas en mis viajes me han enseñado valiosas lecciones sobre la humanidad y la belleza de la diversidad. "
             </h5>
 
