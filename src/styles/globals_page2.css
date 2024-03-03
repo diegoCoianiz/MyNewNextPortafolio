@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  font-family: serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+.blocks {
+  position: absolute;
+  filter: blur(100px);
+  animation: animacion 5s linear infinite;
+  animation-delay: calc(1s * var(--i));
+}
+
+.page {
+  position: relative;
+  color: aliceblue;
+  text-align: center;
+}
+
+@keyframes animacion {
+
+  0%,
+  100% {
+    transform: translateX(-120px);
+  }
+
+  50% {
+    transform: translateX(150px);
+  }
+}
+
+.blocks:nth-child(1) {
+  right: 10px;
+  top: 100px;
+  width: 60%;
+  height: 500px;
+  background-color: rgb(5, 13, 37);
+}
+
+.blocks:nth-child(2) {
+  width: 40%;
+  height: 550px;
+  background-color: rgb(51, 3, 3);
+}
+
+.blocks:nth-child(3) {
+  bottom: 0px;
+  width: 60%;
+  height: 250px;
+  background-color: rgb(0, 29, 19);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.underlined {
+  position: relative;
+}
+
+.underlined::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 8%; /* Ajusta este valor para controlar el inicio del borde desde la izquierda */
+  width: 150%; /*Ajusta este valor para controlar la longitud del borde */
+  height: 2px; /* Ajusta este valor para controlar el grosor del borde */
+  background-color: #d100ae;; /* Ajusta este valor para el color del borde */
+}
+
+header,
+footer {
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-decoration: underline;
+  text-decoration-color: #d100ae;
+  font-size: 161%;
+}
+
+.mainContainer {
+  width: 630px;
+  margin: 0 auto;
+  padding: 0px 50px;
+}
+
+.MainPortrait {
+  order: 1;
+}
+
+.MainProgrammingLanguages {
+  border-right: 2px solid #d100ae;
+  margin: 0;
+}
+
+.MainProgrammingLanguages div {
+  display: inline-block;
+  /* o display: inline-flex; */
+}
+
+.tecnologies {
+  border: white solid 2px;
+  border-radius: 15px;
+  margin: 8px;
+  padding: 5px;
+  transition: font-size 0.3s ease;
+}
+
+.tecnologies:hover {
+  border: #d100ae solid 2px;
+  color: #d100ae;
+  font-size: 120%;
+}
+
+.portrait img {
+  border-radius: 50%;
+  border: #d100ae solid 2px;
+}
+
+
+.proyectsItems div {
+  margin-top: 10px;
+  text-align: justify;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.proyectsItems img {
+  border-radius: 25px;
+  /* border: #d100ae solid 2px; */
+}
+.proyectsItems .card {
+  display: flex;
+  border: #d100ae solid 2px;
+}
+.proyectsItems div:hover img,
+.proyectsItems div:hover .card{
+  border: #a1ffd9 solid 2px; /* Ajusta este estilo según tus necesidades */
+}
+
+.proyectsItems div:hover h2 {
+  color:#a1ffd9;
+}
+
+.proyectCard {
+  background:linear-gradient(45deg, #292929, #000000, #292929); /* Fondo con gradiente */
+  border: #546354a8 solid 3px;
+  width: 450px;
+  position: relative; /* Establecer posición relativa para el contenido absoluto */
+}
+
+.proyectCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-radius: 0px 25px;
+  border-width: 0 60px 60px 0;
+  border-color: transparent #da00ff7a transparent transparent; /* Color del triángulo (rojo en este caso) */
+}
+
+.proyectCard img{
+  margin: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.whatsappButton {
+  border-radius: 50px;
+  border: #d100ae solid 2px;
+  width: 250px;
+  height: 50px;
+  color: #d100ae;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 255, 0, 0.5);
+  box-shadow: 0px 2px 2px rgba(12, 150, 0, 0.568);
+  transition: font-size 0.7s ease;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.05);
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+
+  .MainProgrammingLanguages {
+    margin-top: 20px;
+    order: 2;
+  }
+  
+  .mainContainer {
+    width: 530px;
+  }
+  .MainPortrait {
+    padding: 15px
+  }
+  .proyectsItems {
+    padding: 0px 0px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .proyectsItems .card {
+    display: block;
+  }
+  .proyectsItems .card img{
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MainPortrait {
+    border-left: 2px solid #d100ae; 
+  }
+  .WhoAmI_items {
+    padding-left: 20px;
+    margin-right: 20px;
+    border-right: 2px solid #d100ae;
+  }
+
+  footer h1{
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .proyectCard {
+    width: 400px;
+  }
+
+  .underlined::after {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 394px) {
+
+  /* MEDIA QUERYS XIAOMY REDMI 5G === 373*657 en compu  */
+  .blocks:nth-child(1) {
+    background-color: rgb(27, 56, 143);
+  }
+
+  .blocks:nth-child(2) {
+    background-color: rgb(107, 17, 17);
+  }
+
+  .blocks:nth-child(3) {
+    background-color: rgb(15, 99, 69);
+  }
+}

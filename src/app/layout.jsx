@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+// import '../styles/globals.css'
+import '../styles/globals_page2.css'
 
 export const metadata = {
   title: 'Juan Diego | Portafolio',
