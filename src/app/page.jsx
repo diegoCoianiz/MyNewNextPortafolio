@@ -1,10 +1,9 @@
-// import FirstPage from "@/finalPage/firstPage"
-import SecondPage from "@/finalPage/secondPage"
+import ThirdPage from "@/finalPage/thirdPage"
 
 export default function Home() {
   return (
     <div>
-      <SecondPage />
+      <ThirdPage />
     </div>
   )
 }

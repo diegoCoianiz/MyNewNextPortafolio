@@ -1,5 +1,4 @@
-// import '../styles/globals.css'
-import '../styles/globals_page2.css'
+import '../styles/globals_page3.css'
 
 export const metadata = {
   title: 'Juan Diego | Portafolio',
@@ -11,11 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className='background'>
+        {/* <div className='background'>
           <div className='blocks'  style={{ "--i": "1" }}></div>
           <div className='blocks'  style={{ "--i": "2" }}></div>
           <div className='blocks'  style={{ "--i": "3" }}></div>
-        </div>
+        </div> */}
         <div className='page'>
         {children}
         </div>

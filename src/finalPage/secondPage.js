@@ -133,7 +133,7 @@ const Proyects = () => {
             https://cdn-icons-png.flaticon.com/512/7768/7768607.png
             `,
             title: "Node.js - Web Site: Administrador de gastos",
-            description: "Diseñado con Next.js 13 y MongoDB para gestión de gastos e ingresos, mas un sencillao y eficaz calendario."
+            description: "Diseñado con Next.js 13 y MongoDB para gestión de gastos e ingresos, mas un sencillo y eficaz calendario."
         },
         Python_scrapper: {
             link: "https://github.com/diegoCoianiz/climateWebScraping.py",
