@@ -16,7 +16,7 @@ const PostsSection = ({ data }) => {
 
 export default PostsSection;
 
-const PostCard = ({ post }) => {
+const PostCard = ({ post, key }) => {
   const sliceText = 100
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -27,7 +27,7 @@ const PostCard = ({ post }) => {
   };
 
   return (
-    <div className="post-card">
+    <div className="post-card" key={key}>
       {console.log(longText, )}
       <div className="post-card__content">
         <h3 className="post-card__title">{post.title}</h3>

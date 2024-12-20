@@ -4,7 +4,9 @@ import "@/styles/Footer.css";
 const Footer = () => {
     return (
       <footer className="footer">
-        <p>&copy; 2024 LinkShare App. All rights reserved.</p>
+        <p>&copy; © 10/2024 Personal Portafolio - Todos los derechos reservados. Juan Diego Coianiz
+
+</p>
       </footer>
     );
   };

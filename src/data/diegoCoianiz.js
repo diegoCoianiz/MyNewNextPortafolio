@@ -1,34 +1,47 @@
-export const links = [
-    {
-        name: "LinkedIn 📝",
-        url: "https://www.linkedin.com/in/juan-diego-coianiz-2b4561165/",
-        description: "",
-    },
-    {
-        name: "GitHub 💻",
-        url: "https://github.com/diegoCoianiz",
-        description: ["Proyectos de desarrollo en frontend, backend y Machine Learning."],
-    },
-    {
-        name: "Instagram 📷",
-        url: "https://www.instagram.com/diego_coianiz/?hl=es",
-        description: "",
-    },
-    {
-        name: "WhatsApp 📞",
-        url: "https://wa.me/34603795321",
-        description: ["Empieza un chat conmigo"],
-    },
-    {
-        name: "Gmail 📭",
-        toCopy: "diego.c.coianiz@gmail.com",
-        description: ["Haz click para copiar mi mail", "mail copiado con exito!"],
-    },
-];
+export const links = {
+    princialLinks:
+        [
+            {
+                name: "LinkedIn 📝",
+                url: "https://www.linkedin.com/in/juan-diego-coianiz-2b4561165/",
+                description: "",
+            },
+            {
+                name: "GitHub 💻",
+                url: "https://github.com/diegoCoianiz",
+                description: ["Proyectos de desarrollo en frontend, backend y Machine Learning."],
+            },
+            {
+                name: "Instagram 📷",
+                url: "https://www.instagram.com/diego_coianiz/?hl=es",
+                description: "",
+            },
+            {
+                name: "WhatsApp 📞",
+                url: "https://wa.me/34603795321",
+                description: ["Empieza un chat conmigo"],
+            },
+            {
+                name: "Gmail 📭",
+                toCopy: "diego.c.coianiz@gmail.com",
+                description: ["Haz click para copiar mi mail", "mail copiado con exito!"],
+            },
+        ],
+        sudoku: {
+            name: "Sudoku",
+            url: "https://sudokudev.vercel.app/",
+            description: ["App para divertirse.. y pensar un rato"],
+        },
+        datathon_codeSpace: {
+            name: "Datathon. Examen final de Machine Learning",
+            url: "https://github.com/diegoCoianiz/Datathon_CodeSpace/blob/main/mlflow_predictions.ipynb",
+            description: ["examen final del instituto CodeSpace de Ciencia de datos & IA"],
+
+        }
+}
 
 export const posts = [
     {
-        id: 1,
         title: "Arrived in Cairns!!",
         category: "travels",
         date: "19/12/24",
@@ -41,7 +54,6 @@ export const posts = [
         leyend: "This photo is of the city's public pool, located in the coastal center, an extremely beautiful area!",
     },
     {
-        id: 2,
         title: "Reunion with my mother & exploring Thailand ",
         category: "adventure",
         date: "15/11/24",
@@ -52,6 +64,18 @@ export const posts = [
         description:
             "Thankss you, mother!!! for being the best companion in this world!",
         leyend: "The lying buddha, Wat Pho temple, Bangkok",
+    },
+    {
+        title: "Final course project. Machine Learning & Data Science",
+        category: "informatics",
+        date: "10/07/24",
+        contentType: "image",
+        imgAlt: "",
+        imgPhoto: "/post_Datathon.jpg",
+        videoUrl: "",
+        description:
+            "This study, designed partly in Google Colab and partly in a CONDA environment, corresponds to the final module of the Data Science & AI bootcamp of the Spanish CodeSpace academy, and its purpose is to develop a predictive temporal regression model to determine , in a period of time X (1 month, for the presentation of this project), the future sales of each of the products that this company, divided into 3 ventures, has. You can watch this proyect deployed on my Github account by using the Datathon link on my links section.",
+        leyend: "Time series with historical sales (orange) and predicted (blue) for a company, designed with Machine Learning",
     },
 
 ];
