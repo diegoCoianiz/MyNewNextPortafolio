@@ -1,0 +1,20 @@
+/* styles/NavBar.css */
+.navbar {
+    display: flex;
+    overflow-x: auto;
+    height: 55px;
+  }
+  
+  .navbar__button {
+    flex: 1;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar__button--active {
+    font-size: 18px;
+  }
+  

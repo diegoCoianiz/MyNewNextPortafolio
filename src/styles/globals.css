@@ -1,288 +1,40 @@
+/* styles/globals.css */
 * {
-  box-sizing: border-box;
-  padding: 3px;
-  margin: 0;
+  font-family: "math";
+  margin: 0px;
 }
 
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  background-color: #000000;
-}
-
-.blocks {
-  position: absolute;
-  filter: blur(100px);
-  animation: animacion 5s linear infinite;
-  animation-delay: calc(1s * var(--i));
-}
-
-@keyframes animacion {
-
-  0%,
-  100% {
-    transform: translateX(-120px);
-  }
-
-  50% {
-    transform: translateX(150px);
-  }
-}
-
-.blocks:nth-child(1) {
-  right: 10px;
-  top: 100px;
-  width: 60%;
-  height: 500px;
-  background-color: rgb(5, 13, 37);
-}
-
-.blocks:nth-child(2) {
-  width: 40%;
-  height: 550px;
-  background-color: rgb(51, 3, 3);
-}
-
-.blocks:nth-child(3) {
-  bottom: 0px;
-  width: 60%;
-  height: 250px;
-  background-color: rgb(0, 29, 19);
-}
-
-.page {
-  margin-top: 3%;
-  position: relative;
-  color: aliceblue;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-header h1 {
-  margin-right: -5px;
-}
-
-header h3 {
-  margin-top: -25px;
-}
-
-header img {
-  border-Radius: 50%;
-  margin-Left: -135px;
-  margin-Top: 10px;
-}
-
-header .profile-technologies {
-  max-width: 300px;
-  position: absolute;
-  margin-right: 250px;
-  margin-top: 55px;
-}
-
-main {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  min-height: 210px;
-}
-
-.whatsappForm {
-  display: flex;
-  flex-direction: column;
-}
-
-.whatsappInput {
+  margin: 0;
   font-family: Arial, sans-serif;
-  width: 650px;
-  height: 35px;
-  border: 0;
-  border-bottom: 2px solid #4d0000;
-  border-radius: 5px;
+  background: linear-gradient(#e2cec0, #fffffe);
+  color: #333;
+}
+/* Media query para pantallas mayores que una tablet */
+@media (min-width: 768px) {
+  body {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
 }
 
-.whatsappMain {
-  min-height: 130px;
-  padding: 0px 350px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-}
-
-footer button {
-  margin: 10px 2%;
+button {
+  border: none;
+  background: none;
   cursor: pointer;
-  border-radius: 40px;
 }
 
-footer .facebookApp {
-  display: none;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-.cardSection {
-  margin: 20px 25%;
-}
-.card {
-  border: white solid 1px;
-  margin: 2px 0px;
-  display: flex;
-  border-radius: 10px;
-}
-.card h1{
-  color:#ffffff
-}
-.card h5{
-  color:#ffc400
-}
-.card h6{
-  color:#ffc400
-}
-.card p{
-  color:#b1aea4;
-  text-align: start;
-}
-
-.singleTitleAndSubtitle {
-  display: flex;
-  text-align: "start"
-}
-
-hr {
-  margin-left: 30%;
-  max-width: 40%;
-  margin-bottom: -5px;
-  border: 0;
-  border-bottom: 1px solid;
-  border-color: aliceblue;
-}
-
-@media screen and (max-width: 1000px) {
-
-  header h1 {
-    margin-right: 5px;
-  }
-
-  header h3 {
-    margin-top: -13px;
-    margin-right: -50px;
-  }
-
-  header img {
-    margin-top: 30px;
-    margin-right: -80px;
-  }
-
-  hr {
-    margin-left: 5%;
-    max-width: 90%;
-  }
-
-  header .profile-technologies {
-    margin-right: 220px;
-    margin-top: 92px;
-  }
-
-  .profile-technologies h4 {
-    font-size: 14px;
-    margin-top: -25px;
-  }
-
-  .profile-technologies p {
-    font-size: 12px;
-  }
-
-  main {
-    margin-top: 40px;
-    min-height: 280px;
-  }
-
-  .whatsappMain {
-    min-height: 230px;
-  }
-
-  footer .facebookWebCite {
-    display: none;
-  }
-
-  footer .facebookApp {
-    display: block;
-  }
-
-  .cardSection {
-    margin: 20px 15%;
-  }
-  .card p{
-    font-size:12px;
-  }
-
-  .card h1 {
-    font-size: medium;
-  }
-
-  .whatsappInput {
-    width: 550px;
-  }
-
-}
-
-@media screen and (max-width: 700px) {
-  .cardSection {
-    margin: 20px 10%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .cardSection {
-    margin: 20px 0px;
-  }
-  .whatsappInput {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 394px) {
-  /* MEDIA QUERYS XIAOMY REDMI 5G === 373*657 en compu  */
-
-  h1 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 14px;
-  }
-
-  .page {
-    margin-top: 5%;
-  }
-
-  .blocks:nth-child(1) {
-    background-color: rgb(27, 56, 143);
-  }
-
-  .blocks:nth-child(2) {
-    background-color: rgb(107, 17, 17);
-  }
-
-  .blocks:nth-child(3) {
-    background-color: rgb(15, 99, 69);
-  }
-
-  header .profile-technologies {
-    margin-top: 55px;
-  }
-
-  .cardSection {
-    margin: 20px 0px;
-  }
-  .card img {
-    margin-top: 12%;
-  }
-  .singleTitleAndSubtitle {
-    display: block;
-  }
-
+section {
+  background-color: #f9f9f9;
+  border-radius: 12px;
 }

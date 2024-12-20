@@ -1,0 +1,51 @@
+.resume-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 0px;
+  }
+  
+  .resume-section__intro,
+  .resume-section__careers,
+  .resume-section__education {
+    margin-bottom: 30px;
+  }
+  
+  .resume-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .career-card,
+  .education-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .career-card__title,
+  .education-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #007bff;
+  }
+  
+  .career-card__info,
+  .education-card__info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .career-card__details li,
+  .education-card__details li {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
