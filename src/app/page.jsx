@@ -8,13 +8,17 @@ import LinksSection from '@/components/sections/linksSection';
 import PostsSection from '@/components/sections/postsSection';
 import ResumeSection from '@/components/sections/resumeSection';
 
-import { posts, links, resume, header } from '@/data/diegoCoianiz'
+
+import { posts, links, resume, header, postStories, navBarStorySlider } from '@/data/diegoCoianiz'
+import StorySlider from '@/components/utilTools/storySilder';
 
 const user = {
   header: header,
-  posts: posts,
+  navBarStorySlider: navBarStorySlider,
   links: links,
-  resume: resume
+  resume: resume,
+  posts: posts,
+  postStories: postStories,
 }
 
 export default function Home() {
@@ -25,17 +29,19 @@ export default function Home() {
       case 'Res':
         return <ResumeSection data={user.resume} />;
       case 'Post':
-        return <PostsSection data={user.posts} />;
+        return <PostsSection data={user.posts} stories={user.postStories} />;
       case 'Links':
         return <LinksSection data={user.links} />;
-      // default:
-      // return <LinksSection data={user.links} />;
+      default:
+      return <LinksSection data={user.links} />;
     }
   };
 
   return (
     <div>
       <Header data={user.header} />
+      <StorySlider stories={user.navBarStorySlider} mode="diapositivas" />  
+      {/*  */}
       <NavBar activeSection={activeSection} setActiveSection={setActiveSection} />
       <main>{renderSection()}</main>
       <Footer />

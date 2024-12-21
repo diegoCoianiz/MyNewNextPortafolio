@@ -27,17 +27,17 @@ export const links = {
                 description: ["Haz click para copiar mi mail", "mail copiado con exito!"],
             },
         ],
-        sudoku: {
-            name: "Sudoku",
-            url: "https://sudokudev.vercel.app/",
-            description: ["App para divertirse.. y pensar un rato"],
-        },
-        datathon_codeSpace: {
-            name: "Datathon. Examen final de Machine Learning",
-            url: "https://github.com/diegoCoianiz/Datathon_CodeSpace/blob/main/mlflow_predictions.ipynb",
-            description: ["examen final del instituto CodeSpace de Ciencia de datos & IA"],
+    sudoku: {
+        name: "Sudoku",
+        url: "https://sudokudev.vercel.app/",
+        description: ["App para divertirse.. y pensar un rato"],
+    },
+    datathon_codeSpace: {
+        name: "Datathon. Examen final de Machine Learning",
+        url: "https://github.com/diegoCoianiz/Datathon_CodeSpace/blob/main/mlflow_predictions.ipynb",
+        description: ["examen final del instituto CodeSpace de Ciencia de datos & IA"],
 
-        }
+    }
 }
 
 export const posts = [
@@ -103,3 +103,74 @@ export const header = {
     location: "Cairns, QNL, Australia",
     isOpenToWork: true
 }
+
+export const postStories = [
+    {
+        image: "/his1.jpg",
+        title: "Historia 1",
+        description: "Estadio de Chiang Mai, Tailandia. Pelea de Muay Thay.",
+    },
+    {
+        image: "/his2.jpg",
+        title: "Historia 2",
+        description: "Catedral de Milán, Itália, y Mena, un gran amigo!",
+    },
+    {
+        image: "/his3.jpg",
+        title: "Historia 3",
+        description: "Un monje y sus pensamientos. Parque de Chatuchak, Bangkok. ",
+    },
+    {
+        image: "/his4.jpg",
+        title: "Historia 4",
+        description: "Ninut prendido fuego. Festival de las fallas valencianas, España.",
+    },
+    {
+        image: "/his5.jpg",
+        title: "Historia 5",
+        description: "Amsterdam, Netherlands.",
+    },
+    {
+        image: "/his6.jpg",
+        title: "Historia 6",
+        description: "Catedral de Palma, Mallorca.",
+    },
+    // Agrega más historias aquí
+];
+
+export const navBarStorySlider = [
+    {
+        image: "/navBarHis1.jpg",
+        title: "Historia 1",
+        description: "Web diseñada con React.js 19 y Next.js 15, framework que mayormente utilizo para desarrollo de apps web, pero no el único.",
+        links: [
+            { text: "Mas proyectos", redirect: "https://github.com/diegoCoianiz" },
+            { text: "Contactar", redirect: "https://wa.me/34603795321" },
+        ],
+    },
+    {
+        image: "/navBarHis2.jpg",
+        title: "Historia 2",
+        description: "Utilizo Python con entornos Conda y GoogleColab para diversos proyectos de Data Science & IA que luego integro con tecnologías como Power BI.",
+        links: [
+
+        ],
+    },
+    {
+        image: "/navBarHis4.jpg",
+        title: "Historia 4",
+        description: "Poseo experiencia laboral diseñando scrapers: sitemas de automatización de busqueda en internet.",
+        links: [
+        ]
+    },
+    {
+        image: "/navBarHis3.jpg",
+        title: "Historia 3",
+        description: "Y cuento con proyectos de predicción y clasificación en ML desarrolaldos en el instituto CodeSpace de Málaga, España.",
+        links: [
+            { text: "Mas proyectos", redirect: "https://github.com/diegoCoianiz" },
+            { text: "Contactar", redirect: "https://wa.me/34603795321" },
+        ],
+    },
+    
+];

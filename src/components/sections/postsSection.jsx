@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "@/styles/PostsSection.css";
+import StorySlider from "../utilTools/storySilder";
 
-const PostsSection = ({ data }) => {
+const PostsSection = ({ data, stories }) => {
   const posts = data
   return (
     <section className="section">
+      <StorySlider stories={stories} />
       <div className="posts-section__grid">
         {posts.map((post, id) => (
-          <PostCard key={id} post={post} />
+          <PostCard id={id} post={post} />
         ))}
       </div>
     </section>
@@ -16,7 +18,7 @@ const PostsSection = ({ data }) => {
 
 export default PostsSection;
 
-const PostCard = ({ post, key }) => {
+const PostCard = ({ post, id }) => {
   const sliceText = 100
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -27,7 +29,7 @@ const PostCard = ({ post, key }) => {
   };
 
   return (
-    <div className="post-card" key={key}>
+    <div className="post-card" key={id}>
       {console.log(longText, )}
       <div className="post-card__content">
         <h3 className="post-card__title">{post.title}</h3>

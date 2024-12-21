@@ -1,0 +1,122 @@
+/* General Slider */
+.story-slider {
+  width: 100%;
+  position: relative;
+}
+
+/* Panorama Mode */
+.story-slider__container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.story-slider__container::-webkit-scrollbar {
+  display: none;
+}
+
+.story-slider__item {
+  flex-shrink: 0;
+  width: calc(33.33% - 10px);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.story-slider__image {
+  width: 100%;
+  /* height: 200px; */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.story-slider__image:hover {
+  transform: scale(1.05);
+}
+
+/* Diapositivas Mode */
+.story-slider--diapositivas .story-slider__container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.story-slider__item--slide {
+  flex: 0 0 100%; /* Cada diapositiva ocupa todo el ancho del contenedor */
+}
+
+.story-detail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.story-detail__left {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-detail__image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.story-detail__right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.story-detail__description {
+  flex: 1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.story-detail__links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.story-detail__button {
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.story-detail__button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Indicators */
+.story-slider__indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.story-slider__dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.story-slider__dot--active {
+  background: rgb(0 72 255 / 51%)
+}
